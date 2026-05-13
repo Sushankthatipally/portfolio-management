@@ -22,56 +22,6 @@ a virtual cash balance, and review their holdings, P&L, and full transaction his
 
 ---
 
-## Syllabus Coverage
-
-### Unit I — HTML & CSS
-- `index.html` — semantic landing page with hero, feature grid
-- Forms (`login.jsp`, `register.jsp`, `trade.jsp`) — text, password, email, checkbox, number, hidden
-- Tables — Dashboard, Market, Transactions
-- Images / icon containers
-- CSS — selectors, box model, margins/padding/borders, backgrounds, links, lists, tables
-- `position: sticky`, `z-index`, `overflow`, `inline-block`, dropdown navigation, multi-column layout
-
-### Unit II — JavaScript, XML, AJAX
-- `js/validation.js` — variables (let/const), operators, conditionals, **regular expressions** for form validation
-- `js/script.js` — arrays, array functions (`forEach`, `Array.from`), String methods, **Date object**
-- **Event handlers** — keyboard (`/` focus shortcut), mouse (row hover), form (submit confirm), window (load animation)
-- **DOM** manipulation — `getElementById`, `querySelectorAll`, `innerHTML`, style mutation
-- **AJAX** — `XMLHttpRequest` calls `api/stocks` and parses **XML response** to render the market table
-- **XML** — `WebContent/xml/stocks.xml` with namespaces; `stocks.dtd` schema
-- Servlet `/api/stocks` emits valid XML (and JSON when `?format=json`)
-
-### Unit III — Servlets
-- **Servlet lifecycle** — `init()` (reads init-params from `web.xml`), `service()`, `destroy()`
-- **Servlet API** — `HttpServletRequest`, `HttpServletResponse`, `ServletContext`, `HttpSession`
-- **Reading servlet parameters** — `request.getParameter(...)`
-- **Reading initialization parameters** — `getInitParameter("appName")` in `LoginServlet`
-- **Handling HTTP Request & Response** — GET/POST in all controllers
-- **Session management**
-  - Hidden fields — `<input type="hidden" name="stockId">` in `trade.jsp`
-  - Cookies — "Remember me" persistent cookie in `LoginServlet`
-  - HttpSession — login state, flash messages
-  - URL rewriting — `response.encodeRedirectURL(...)`
-- **RequestDispatcher** — `request.getRequestDispatcher(...).forward(...)`
-- **JDBC** — `DBConnection.java` + DAO classes use `PreparedStatement`, transactions, connection close
-
-### Unit IV — JSP & MVC
-- **Anatomy of JSP** — directives, declarations, expressions, scriptlets, comments
-  - `<%@ page %>` / `<%@ page import %>` directives at the top of each view
-  - `<%= ... %>` expressions for output
-  - `<% ... %>` scriptlets for control flow
-- **Implicit objects** — `request`, `response`, `session`, `application`, `out`
-- **JavaBeans** — `<jsp:useBean>` and `<jsp:getProperty>` used in `dashboard.jsp`
-- **Session management** — cookies + sessions (same as Unit III)
-- **JDBC from JSP** — via DAOs (loose coupling, MVC compliant)
-- **MVC Architecture**
-  - **Model** — `com.pms.model.*` (User, Stock, Holding, Transaction)
-  - **View** — `WebContent/WEB-INF/views/*.jsp`
-  - **Controller** — `com.pms.controller.*` Servlets
-  - DAO layer separates persistence from controllers
-
----
-
 ## Project Structure
 
 ```
