@@ -1,0 +1,11 @@
+<!ELEMENT stocks (stock+)>
+<!ELEMENT stock (symbol, company, price, previousClose, marketCap)>
+<!ATTLIST stock
+    id CDATA #REQUIRED
+    sector CDATA #IMPLIED>
+<!ELEMENT symbol (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency CDATA "INR">
+<!ELEMENT previousClose (#PCDATA)>
+<!ELEMENT marketCap (#PCDATA)>

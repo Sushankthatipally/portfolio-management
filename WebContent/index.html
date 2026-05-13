@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #1f6feb 0%, #16a34a 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 42px; margin-bottom: 10px; }
+        .hero p  { font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto 24px; }
+        .hero .btn-primary { background: white; color: #1f6feb; padding: 12px 28px; font-size: 16px; }
+        .features { padding: 60px 0; }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-top: 28px;
+        }
+        .feature-card {
+            background: white;
+            border: 1px solid #e3e8ef;
+            border-radius: 10px;
+            padding: 24px;
+        }
+        .feature-card .icon {
+            display: inline-block;
+            width: 44px; height: 44px;
+            background: #eef4ff;
+            color: #1f6feb;
+            border-radius: 8px;
+            line-height: 44px;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 { font-size: 16px; margin-bottom: 6px; }
+        .feature-card p  { font-size: 14px; color: #6b7280; }
+    </style>
+</head>
+<body>
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="index.html">Portfolio<span>Management</span></a>
+        <nav class="navlinks">
+            <ul>
+                <li><a href="login">Login</a></li>
+                <li><a href="register">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Manage Your Portfolio Smarter</h1>
+    <p>A simple, full-stack Portfolio Management System built with Servlets, JSP &amp; JDBC — track holdings, simulate trades, and view your P&amp;L in real time.</p>
+    <a href="register" class="btn btn-primary">Get Started Free</a>
+</section>
+
+<section class="features container">
+    <h2 style="text-align:center">Why use Portfolio Management System?</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="icon">P</div>
+            <h3>Portfolio Tracking</h3>
+            <p>Live holdings, average cost, and current valuation at a glance.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">T</div>
+            <h3>Simulated Trading</h3>
+            <p>Practice buying &amp; selling stocks with &#8377;1,00,000 virtual cash.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">H</div>
+            <h3>Transaction History</h3>
+            <p>Every BUY and SELL recorded with timestamps and totals.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">R</div>
+            <h3>Real-time Search</h3>
+            <p>AJAX-powered stock search using XML data interchange.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Portfolio Management System &middot; Built using HTML, CSS, JS, Servlets &amp; JSP</p>
+    </div>
+</footer>
+</body>
+</html>

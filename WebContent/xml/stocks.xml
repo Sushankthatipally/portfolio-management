@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stocks xmlns:fin="http://pms.example.com/finance">
+    <stock id="1" sector="Energy">
+        <symbol>RELIANCE</symbol>
+        <company>Reliance Industries Ltd</company>
+        <fin:price currency="INR">2845.50</fin:price>
+        <fin:previousClose>2820.30</fin:previousClose>
+        <marketCap>19.2T</marketCap>
+    </stock>
+    <stock id="2" sector="IT">
+        <symbol>TCS</symbol>
+        <company>Tata Consultancy Services</company>
+        <fin:price currency="INR">3678.20</fin:price>
+        <fin:previousClose>3654.10</fin:previousClose>
+        <marketCap>13.4T</marketCap>
+    </stock>
+    <stock id="3" sector="IT">
+        <symbol>INFY</symbol>
+        <company>Infosys Limited</company>
+        <fin:price currency="INR">1547.80</fin:price>
+        <fin:previousClose>1532.45</fin:previousClose>
+        <marketCap>6.5T</marketCap>
+    </stock>
+    <stock id="4" sector="Banking">
+        <symbol>HDFC</symbol>
+        <company>HDFC Bank Limited</company>
+        <fin:price currency="INR">1689.90</fin:price>
+        <fin:previousClose>1675.20</fin:previousClose>
+        <marketCap>12.8T</marketCap>
+    </stock>
+    <stock id="5" sector="Banking">
+        <symbol>ICICI</symbol>
+        <company>ICICI Bank Limited</company>
+        <fin:price currency="INR">1124.50</fin:price>
+        <fin:previousClose>1110.75</fin:previousClose>
+        <marketCap>7.9T</marketCap>
+    </stock>
+</stocks>

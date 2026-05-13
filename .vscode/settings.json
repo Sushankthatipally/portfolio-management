@@ -1,0 +1,6 @@
+{
+  "java.project.referencedLibraries": [
+    "WebContent/WEB-INF/lib/*.jar",
+    "C:/Users/rahul/Downloads/apache-tomcat-9.0.118-windows-x64/apache-tomcat-9.0.118/lib/servlet-api.jar"
+  ]
+}
